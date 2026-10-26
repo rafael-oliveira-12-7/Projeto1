@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <!-- Navegacao para a pagina 1 -->
+    <a href="index.html">Ir para a pagina do Sporting</a>
+
+    <h1>SL Benfica</h1>
+
+    <p>O Benfica é um clube de futebol de Lisboa.</p>
+
+    <h2>Coisas importantes:</h2>
+    <ul>
+        <li>Estadio da Luz</li>
+        <li>Cor vermelho e branco</li>
+        <li>Fundado em 1904</li>
+    </ul>
+
+    <h2>Logo do Benfica:</h2>
+    <a href="https://www.slbenfica.pt/">
+        <img src="https://ballprediction.com/images/club/benfica.png"/>
+    </a>
+
+    <h2>Titulos</h2>
+    <table border="1">
+        <tr>
+            <td>Campeonatos</td>
+            <td>38</td>
+        </tr>
+        <tr>
+            <td>Taças de Portugal</td>
+            <td>26</td>
+        </tr>
+    </table>
+
+    <h2>Vídeo em Destaque</h2>
+    
+    <div id="video-benfica"></div>
+
+    <script>
+        const urlVideo = "https://www.youtube.com/embed/B_RLzusteb0";
+
+        const container = document.getElementById("video-benfica");
+
+        container.innerHTML = `
+            <iframe 
+                width="560" 
+                height="315" 
+                src="${urlVideo}" 
+                title="Vídeo do Benfica" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        `;
+    </script>
+
+    <p>Esta pagina fala sobre o <strong>Grande clube Sport Lisboa e Benfica</strong>.</p>
+
+</body>
+</html>

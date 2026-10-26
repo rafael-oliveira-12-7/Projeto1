@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <!-- Navegacao para a pagina 2 -->
+    <a href="pag2.html">Ir para a pagina do Benfica</a>
+
+    <h1>Sporting CP</h1>
+
+    <p>O Sporting e um clube de futebol de Lisboa.</p>
+
+    <h2>Coisas importantes:</h2>
+    <ul>
+        <li>Estadio Jose Alvalade</li>
+        <li>Cor verde e branca</li>
+        <li>Fundado em 1906</li>
+    </ul>
+
+    <h2>Logo do Sporting:</h2>
+    <a href="https://www.sporting.pt">
+        <img src="https://assets.football-logos.cc/logos/portugal/256x256/sporting-cp.8b32e971.png"/>
+    </a>
+
+    <h2>Titulos</h2>
+    <table border="1">
+        <tr>
+            <td>Campeonatos</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Taças de Portugal</td>
+            <td>18</td>
+        </tr>
+    </table>
+
+    <h2>Vídeo em Destaque</h2>
+    
+    <div id="video-sporting"></div>
+
+    <script>
+        const urlVideo = "https://www.youtube.com/embed/SzfSyuQs8tI";
+
+        const container = document.getElementById("video-sporting");
+
+        container.innerHTML = `
+            <iframe 
+                width="560" 
+                height="315" 
+                src="${urlVideo}" 
+                title="Vídeo do Sporting" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        `;
+    </script>
+
+    <p>Esta pagina fala sobre o <strong>Grande clube Sporting</strong>.</p>
+
+</body>
+</html>
